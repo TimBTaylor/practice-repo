@@ -42,16 +42,16 @@ app.get("/healthcheck", (req, res) => {
 });
 
 // user sign in and or create employee account
-app.get(
-  "/auth/google",
-  passport.authenticate("google", { scope: ["email", "profile"] })
-);
+// app.get(
+//   "/auth/google",
+//   passport.authenticate("google", { scope: ["email", "profile"] })
+// );
 
-//create admin account
-app.get(
-  "/auth/google/admin",
-  passport.authenticate("google-create-admin", { scope: ["email", "profile"] })
-);
+// //create admin account
+// app.get(
+//   "/auth/google/admin",
+//   passport.authenticate("google-create-admin", { scope: ["email", "profile"] })
+// );
 
 app.listen(process.env.PORT || 3001, () => {
   console.log("Server running on port 3001");
