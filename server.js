@@ -8,7 +8,7 @@ const session = require("express-session");
 // const jobRouter = require("./routes/jobs");
 // const timeRouter = require("./routes/time");
 const cors = require("cors");
-require("./auth");
+// require("./auth");
 
 const app = express();
 
