@@ -15,8 +15,8 @@ const app = express();
 app.use(express.json());
 
 app.use(session({ secret: "cats" }));
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 app.use(
   cors({
